@@ -26,7 +26,7 @@ const AUTHORIZATION = {
 
 test("test input.csv", async () => {
     const analyze_form = new (require("form-data"))();
-    analyze_form.append("data", fs.readFileSync("../input.csv"), {
+    analyze_form.append("data", fs.readFileSync("input.csv"), {
         contentType: "text/csv",
     });
 
